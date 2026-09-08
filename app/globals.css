@@ -1,0 +1,32 @@
+:root {
+  color-scheme: dark;
+  --bg: #111820;
+  --fg: #eef2f0;
+  --muted: rgba(238, 242, 240, 0.6);
+  --accent: #71c98e;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+main { max-width: 32rem; padding: 2rem; }
+h1 { font-size: 2rem; letter-spacing: -0.05em; margin: 0 0 0.5rem; }
+h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin: 2rem 0 0.75rem; }
+p { color: var(--muted); line-height: 1.6; }
+button {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover { background: rgba(113, 201, 142, 0.12); }
+#swatches { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+.swatch { width: 3rem; height: 3rem; border-radius: 0.75rem; }
